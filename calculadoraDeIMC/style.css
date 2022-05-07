@@ -1,0 +1,86 @@
+:root {
+    --azulEscuro: #14283e;
+    --azulMedio: #38637f;
+    --azulClaro: #a3cef1;
+    --cinzaEscuro: #858683;
+    --black: black;
+    --white: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--azulClaro);
+}
+
+h1 {
+    color: var(--white);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(90deg, var(--azulEscuro), var(--cinzaEscuro));
+    text-align: center;
+}
+
+.calculadoraIMC {
+    color: var(--azulEscuro);
+    background-color: var(--azulMedio);
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.inputs {
+    margin-top: 20px;
+    text-align: center;
+}
+
+input[type="number"] {
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--azulEscuro);
+    text-align: center;
+    height: 20px;
+    width: 200px;
+}
+
+input[type="text"] {
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--azulEscuro);
+    text-align: center;
+    height: 20px;
+    width: 200px;
+}
+
+.resultadoIMC {
+    background-color: var(--white);
+    width: 80%;
+    height: 140px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 2px solid var(--azulEscuro);
+    padding: 5px;
+}
+
+button {
+    border: 2px solid var(--azulEscuro);
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    color: var(--azulEscuro);
+    background-color: var(--azulClaro);
+    margin-top: 20px;
+}
+
+::-webkit-input-placeholder {
+    color: var(--azulEscuro);
+    text-align: center;
+}
