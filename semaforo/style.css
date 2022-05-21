@@ -1,99 +1,89 @@
-body{
- background-color: #a3cef1;
+body {
+  background: rgb(1, 32, 48);
+  background: linear-gradient(120deg, #012030 0%, #13678a 100%);
+  text-align: center;
+  min-height: 100vh;
 }
 
 a {
-    text-decoration: none;
-    background-color: #14283e;
-    color: #a3cef1;
-    padding: 10px;
-    border-radius: 5px;
+  text-decoration: none;
+  background-color: #a3cef1;
+  color: #14283e;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 h2 {
-    font-size: 2rem;
-    color: #14283e;
+  font-size: 2rem;
+  color: #a3cef1;
 }
 
-#semaforo {
-            width:95%;
-            height: 500px;
-            margin: auto;
-        }
-.mAuto{
-    display: flex;
-}        
+.semaforo {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  margin: 50px auto 50px auto;
+  width: 70vw;
+  height: 70vh;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.mAuto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
-.off {
-            background-image: url("img/off.png");
-            background-repeat: no-repeat;
-            margin: auto;
-            background-position: center;
-        }
-
-.yellow {
-            background-image: url("img/orange.png");
-            background-repeat: no-repeat;
-            margin: auto;
-            background-position: center;
-        }
-
-.red {
-            background-image: url("img/red.png");
-            background-repeat: no-repeat;
-            margin: auto;
-            background-position: center;
-        }
-
-.green {
-            background-image: url("img/green.png");
-            background-repeat: no-repeat;
-            margin: auto;
-            background-position: center;
-        }
 /*botoes*/
-button{
-    width: 80px;
-    height: 40px;
-    margin: 0rem 1rem;
-    border-radius: 5px;
+button {
+  width: 80px;
+  height: 40px;
+  margin: 0rem 1rem;
+  border-radius: 5px;
 }
-.btyellow button{
-    background-color: rgb(255, 118, 64);
-    border: 3px solid rgb(255, 72, 0);
-    font-weight: bold;
-}
-
-.btred button{
-background-color: rgb(255, 46, 46);
-border: 3px solid red;
-font-weight: bold;
+.btyellow button {
+  background-color: #fa7f08;
+  border: 3px solid #f24405;
+  font-weight: bold;
 }
 
-.btgreen button{
-background-color: rgb(46, 255, 46);
-border: 3px solid green;
-font-weight: bold;
+.btred button {
+  background-color: #a61722;
+  border: 3px solid #7e0409;
+  font-weight: bold;
 }
 
-.btauto button{
-background-color: #ccc;
-border: 3px solid #14283e;
-font-weight: bold;
-color: #14283e;
+.btgreen button {
+  background-color: #9aeba3;
+  border: 3px solid #45c4b0;
+  font-weight: bold;
 }
 
-.btoff button{
-background-color: rgb(46, 46, 46);
-border: 3px solid black;
-font-weight: bold;
-color: white;
+.btauto button {
+  background-color: #ccc;
+  border: 3px solid #14283e;
+  font-weight: bold;
+  color: #14283e;
 }
-@media only screen and (max-width: 800px){
-   .mAuto{
-     display: block;
-   } 
-   button{
-       margin-top: 15px;
-   }
+
+.btoff button {
+  background-color: rgb(46, 46, 46);
+  border: 3px solid black;
+  font-weight: bold;
+  color: white;
+}
+@media only screen and (max-width: 800px) {
+  .mAuto {
+    display: block;
+  }
+  button {
+    margin-top: 15px;
+  }
 }

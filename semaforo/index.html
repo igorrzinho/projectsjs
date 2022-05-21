@@ -1,66 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
     <title>semaforo</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <h2>mabe by <a href="https://github.com/igorrzinho">igorrzinho</a></h2>
-    <div class="off" id="semaforo">
+    <div class="semaforo">
+      <img id="semaforo" src="img/off.png" alt="" />
     </div>
     <div class="mAuto">
-        <div class="btoff"><button onclick="off()">desligado</button></div>
-        <div class="btred"><button onclick="change(2)">vermelho</button></div>
-        <div class="btyellow"><button onclick="change(3)">laranja</button></div>
-        <div class="btgreen"><button onclick="change(1)">verde</button></div>
-        <div class="btauto"><button onclick="automatico()">auto</button></div>
-        
+      <div class="btoff"><button onclick="off()">desligado</button></div>
+      <div class="btgreen"><button onclick="change(1)">verde</button></div>
+      <div class="btyellow"><button onclick="change(2)">laranja</button></div>
+      <div class="btred"><button onclick="change(3)">vermelho</button></div>
+      <div class="btauto"><button onclick="auto()">auto</button></div>
     </div>
 
-    <script>
-        var timer;
-        var obj = document.getElementById('semaforo');
-        function auto() {
-            for (let i = 0; i < 200; i++) {
-                var number = Math.floor(Math.random() * 4);
-                if (number == 1) {//se "c" for igual a 1 
-                    obj.setAttribute("class", "green");
-                } else if (number == 2) {//se "c" for igual a 2
-                    obj.setAttribute("class", "red");
-                } else if (number == 3) {//se "c" for igual a 3
-                    obj.setAttribute("class", "yellow");
-                }
-
-            }
-        }
-        function automatico() {
-            clearTimeout(timer)
-            timer = setInterval(auto,1000);
-        }
-        function off() {
-            clearTimeout(timer)
-            obj.setAttribute("class", "off");
-
-        }
-        function change(c) {
-            clearInterval(timer);
-            if (c == 1) {//se "c" for igual a 1 
-                obj.setAttribute("class", "green");
-            } else if (c == 2) {//se "c" for igual a 2
-                obj.setAttribute("class", "red");
-            } else if (c == 3) {//se "c" for igual a 3
-                obj.setAttribute("class", "yellow");
-            }
-        }
-    </script>
-</body>
-
-
+    <script src="script.js"></script>
+  </body>
 </html>
