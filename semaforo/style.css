@@ -1,6 +1,7 @@
 body {
   background: rgb(1, 32, 48);
-  background: linear-gradient(120deg, #012030 0%, #13678a 100%);
+  background: linear-gradient(120deg, rgba(10, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 100%);
+
   text-align: center;
   min-height: 100vh;
 }
@@ -27,7 +28,7 @@ h2 {
     rgba(255, 255, 255, 0.1)
   );
   margin: 50px auto 50px auto;
-  width: 70vw;
+  width: 50vw;
   height: 70vh;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);

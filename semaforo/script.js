@@ -13,9 +13,6 @@ function automatico() {
   }
   change(muda);
 }
-function auto() {
-  timer = setInterval(automatico, 10);
-}
 function off() {
   clearTimeout(timer);
   obj.src = "./img/off.png";
