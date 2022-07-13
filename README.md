@@ -16,3 +16,6 @@ https://igorrzinho.github.io/projectsjs/card-shoes/
 
 link pomodoro
 https://igorrzinho.github.io/projectsjs/pomodoro/
+
+link card-preview
+https://igorrzinho.github.io/projectsjs/product-preview-card/
